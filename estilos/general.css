@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+    background: linear-gradient(0deg, rgba(250,214,164,1) 0%, rgba(0,200,245,1) 11%, rgba(58,71,213,1) 100%);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedor{
+    display: flex;
+    font-size: 10px;
+}
+
+a{
+    font-size: 2.2em;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 5.5em;
+}
+
+h2{
+    font-size: 5em;
+}
+
+h3{
+    font-size: 4em;
+}
+
+h4{
+    font-size: 3em;
+}
+
+p{
+    font-size: 2.2em;
+}

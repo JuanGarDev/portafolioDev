@@ -1,0 +1,12 @@
+#sobremi .contenedor{
+    flex-direction: column;
+    margin: 20px;
+}
+
+#sobremi .texto{
+    margin: 0 20px;
+}
+
+#sobremi p{
+    margin: 20px 0;
+}
