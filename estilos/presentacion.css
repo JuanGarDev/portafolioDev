@@ -1,7 +1,7 @@
 #presentacion .contenedor{
     flex-direction: column;
 
-    padding: 34vh 20px 41vh 20px;
+    padding: 34vh 20px 38vh 20px;
 }
 
 .foto{
@@ -9,7 +9,7 @@
 }
 
 #presentacion h1{
-    letter-spacing: .8px;
+    letter-spacing: 1.4px;
 }
 
 #presentacion h3{
@@ -17,5 +17,5 @@
 }
 
 #presentacion h4{
-    letter-spacing: 1.8px;
+    letter-spacing: .8px;
 }

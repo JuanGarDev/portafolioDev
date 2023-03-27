@@ -3,10 +3,85 @@
     margin: 20px;
 }
 
-#sobremi .texto{
-    margin: 0 20px;
+#sobremi .contenedor-sobremi{
+    margin: 20px 20px;
 }
+
+/*Habilidades*/
 
 #sobremi p{
     margin: 20px 0;
 }
+
+
+
+
+
+
+#sobremi i{
+    font-size: 5.5em;
+    margin: 0 20px;
+    transition: transform .3s linear;
+}
+
+
+#sobremi i:hover{
+    transform: translateX(0) scale(1.15);
+}
+
+/*Java*/
+
+#sobremi .java{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+#herramientas{
+    text-align: center;
+    margin: 20px;
+}
+
+#herramientas p{
+    margin: 0 15px;
+    transition: color .3s linear;
+}
+
+#herramientas p:hover{
+    cursor: default;
+}
+
+#spring:hover{
+    color: #6cb52d;
+}
+
+#maven:hover{
+    color: #D4432A;
+}
+
+#hiber:hover{
+    color: #aca69f;
+}
+
+#herramientas{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Tecnologias*/
+#sobremi .tecnologias{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.tecnologias i{
+    transition: color .3s linear;
+}
+
+
+
