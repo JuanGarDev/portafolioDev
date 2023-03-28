@@ -7,23 +7,21 @@
     margin: 20px 20px;
 }
 
+
 /*Habilidades*/
 
 #sobremi p{
     margin: 20px 0;
 }
 
-
-
-
-
+/*Teccnologias*/
 
 #sobremi i{
     font-size: 5.5em;
-    margin: 0 20px;
+    margin: 20px 20px;
     transition: transform .3s linear;
+    
 }
-
 
 #sobremi i:hover{
     transform: translateX(0) scale(1.15);
@@ -31,38 +29,64 @@
 
 /*Java*/
 
-#sobremi .java{
+
+
+#sobremi .contendor-lenguaje{
     display: flex;
     flex-direction: column;
 
-    margin: 20px;
+    text-align: left;
+
+    padding: 10px;
+    margin: 40px 0 20px 0;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .2);
+
 }
 
-#herramientas{
-    text-align: center;
-    margin: 20px;
+.contendor-lenguaje p{
+    padding: 10px;
+    font-size: 1.6em;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: -.5px;
 }
 
-#herramientas p{
-    margin: 0 15px;
-    transition: color .3s linear;
+
+
+.etiquetas{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
 }
 
-#herramientas p:hover{
-    cursor: default;
+.kws {
+    color: #893bf6;
 }
 
-#spring:hover{
-    color: #6cb52d;
+.simbolos{
+    color: #3481fd;
 }
 
-#maven:hover{
-    color: #D4432A;
+.valor{
+    color: #FB5607;
 }
 
-#hiber:hover{
-    color: #aca69f;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #herramientas{
     display: flex;
@@ -75,12 +99,6 @@
     flex-direction: row;
     
     justify-content: center;
-    margin: 20px;
-    
-}
-
-.tecnologias i{
-    transition: color .3s linear;
 }
 
 

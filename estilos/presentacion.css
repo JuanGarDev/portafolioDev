@@ -1,6 +1,5 @@
 #presentacion .contenedor{
     flex-direction: column;
-
     padding: 34vh 20px 38vh 20px;
 }
 
@@ -19,3 +18,12 @@
 #presentacion h4{
     letter-spacing: .8px;
 }
+
+.contenedor-img{
+    display: none;
+    width: 70vw;
+    height: 30vh;
+}
+
+
+
