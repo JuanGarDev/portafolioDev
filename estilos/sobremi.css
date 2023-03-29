@@ -53,18 +53,18 @@
     margin: 1em 0;
     width: 25em;
     border-radius: 2em;
-    border: 1px solid white;
+    border: 1.5px solid white;
 }
 
 .nivel div{
     width: 0;
     height: 1.5em;
     border-radius: 1em;
-    background-color: rgba(73, 73, 235, .5);
+    background-color: rgba(66, 212, 79, .6);
 }
 
 #javaNiv{
-    animation: java-barra 4s forwards;
+    animation: java-barra 15s forwards;
 }
 
 @keyframes java-barra {
@@ -74,7 +74,7 @@
 }
 
 #springNiv{
-    animation: spring-barra 4s forwards;
+    animation: spring-barra 15s forwards;
 }
 
 @keyframes spring-barra {
@@ -84,7 +84,7 @@
 }
 
 #hibernateNiv{
-    animation: hibernate-barra 4s forwards;
+    animation: hibernate-barra 15s forwards;
 }
 
 @keyframes hibernate-barra {
@@ -100,7 +100,7 @@
 }
 
 #mysqlNiv{
-    animation: myqsl-barra 4s forwards;
+    animation: myqsl-barra 15s forwards;
 }
 
 @keyframes myqsl-barra {
@@ -110,7 +110,7 @@
 }
 
 #htmlNiv{
-    animation: html-barra 4s forwards;
+    animation: html-barra 15s forwards;
 }
 
 @keyframes html-barra {
@@ -120,7 +120,7 @@
 }
 
 #cssNiv{
-    animation: css-barra 4s forwards;
+    animation: css-barra 15s forwards;
 }
 
 @keyframes css-barra {
@@ -130,7 +130,7 @@
 }
 
 #jsNiv{
-    animation: js-barra 4s forwards;
+    animation: js-barra 15s forwards;
 }
 
 @keyframes js-barra {
