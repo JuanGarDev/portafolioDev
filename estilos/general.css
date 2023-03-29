@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Barlow Condensed', sans-serif;
 }
 
 body{
@@ -10,7 +9,32 @@ body{
     color: #fcfcfc;
     text-align: center;
     align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
 }   
+
+body{
+    
+    background-image: linear-gradient
+    (0deg,
+    rgb(206, 133, 255) 0%, 
+    rgba(0,200,245,1) 11%, 
+    rgba(58,71,213,1) 100%);
+
+    background-size: 200% 200%;
+
+    animation: movimiento 5s linear infinite alternate;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+
+
 
 .contenedor{
     display: flex;
@@ -26,6 +50,7 @@ a{
 
 h1{
     font-size: 5.5em;
+    
 }
 
 h2{
@@ -33,11 +58,11 @@ h2{
 }
 
 h3{
-    font-size: 4em;
+    font-size: 3em;
 }
 
 h4{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 p{

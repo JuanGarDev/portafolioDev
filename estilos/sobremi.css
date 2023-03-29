@@ -37,52 +37,107 @@
 
     text-align: left;
 
-    padding: 10px;
-    margin: 40px 0 20px 0;
+    padding: 30px;
+    margin-top: 40px;
 
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 1.5em;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .2);
-
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .3);
 }
 
-.contendor-lenguaje p{
-    padding: 10px;
-    font-size: 1.6em;
-    font-family: 'Source Code Pro', monospace;
-    letter-spacing: -.5px;
+.contendor-lenguaje h4{
+    margin-left: .5em;
 }
 
-
-
-.etiquetas{
-    font-family: 'Source Code Pro', monospace;
-    font-weight: bold;
+.nivel{
+    margin: 1em 0;
+    width: 25em;
+    border-radius: 2em;
+    border: 1px solid white;
 }
 
-.kws {
-    color: #893bf6;
+.nivel div{
+    width: 0;
+    height: 1.5em;
+    border-radius: 1em;
+    background-color: rgb(13, 250, 163, .6);
 }
 
-.simbolos{
-    color: #3481fd;
+#javaNiv{
+    animation: java-barra 4s forwards;
 }
 
-.valor{
-    color: #FB5607;
+@keyframes java-barra {
+    100% {
+        width: 85%;
+    }
 }
 
+#springNiv{
+    animation: spring-barra 4s forwards;
+}
 
+@keyframes spring-barra {
+    100% {
+        width: 65%;
+    }
+}
 
+#hibernateNiv{
+    animation: hibernate-barra 4s forwards;
+}
 
+@keyframes hibernate-barra {
+    100% {
+        width: 65%;
+    }
+}
 
+#division{
+    margin: 2em;
+    height: 1px;
+    background-color: white;
+}
 
+#mysqlNiv{
+    animation: myqsl-barra 4s forwards;
+}
 
+@keyframes myqsl-barra {
+    100% {
+        width: 75%;
+    }
+}
 
+#htmlNiv{
+    animation: html-barra 4s forwards;
+}
 
+@keyframes html-barra {
+    100% {
+        width: 85%;
+    }
+}
 
+#cssNiv{
+    animation: css-barra 4s forwards;
+}
 
+@keyframes css-barra {
+    100% {
+        width: 70%;
+    }
+}
 
+#jsNiv{
+    animation: js-barra 4s forwards;
+}
+
+@keyframes js-barra {
+    100% {
+        width: 50%;
+    }
+}
 
 
 
@@ -94,12 +149,15 @@
 }
 
 /*Tecnologias*/
-#sobremi .tecnologias{
+.tecnologias{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
     justify-content: center;
 }
 
 
 
+.otros{
+    display: flex;
+}
