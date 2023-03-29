@@ -24,6 +24,7 @@ header i{
 }
 
 header i:hover{
+    color: #ffffff;
     cursor: pointer;
     transform: translateX(0) scale(1.15);
 }

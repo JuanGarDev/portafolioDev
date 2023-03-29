@@ -26,7 +26,7 @@
                 <a href="#">Proyectos</a>
                 <a href="#">Contacto</a>
             </div>
-            <i class="fa-solid fa-sun tamanio" id="modo"></i>
+            <i class="fa-solid fa-moon tamanio" id="modo"></i>
         </div>
     </header>
 
@@ -53,7 +53,6 @@
     <section id="sobremi">
         <div class="contenedor">
 
-            <!--Texto sobre mi-->
             <div class="contenedor-sobremi">
                 <h4>Sobre mi</h4>
                 <p>
@@ -69,7 +68,6 @@
                 </p>
             </div>
 
-            <!--Habilidades-->
             <div class="contenedor-sobremi">
                 <h3>Habilidades</h3>
                 <div class="tecnologias">
@@ -119,7 +117,6 @@
                 </div>
             </div>
 
-            <!--Tecnologias-->
             <div class="contenedor-sobremi">
                 <h3>Tecnologías</h3>
                 <div class="otros">
@@ -132,7 +129,23 @@
         </div>
     </section>
 
-    <script src="funciones.js" defer></script>
+
+    <script>
+        icono = document.getElementById("modo");
+            icono.addEventListener('click', () => {
+                if(icono.classList.contains('fa-moon')){
+                    document.body.classList.toggle('oscuro');
+                    document.body.classList.remove('claro');
+                    icono.classList.toggle('fa-sun');
+                    icono.classList.remove('fa-moon');
+                }else if(icono.classList.contains('fa-sun')){
+                    document.body.classList.toggle('claro');
+                    document.body.classList.remove('oscuro');
+                    icono.classList.toggle('fa-moon');
+                    icono.classList.remove('fa-sun');
+                }
+        });
+    </script>
 </body>
 
 </html>
