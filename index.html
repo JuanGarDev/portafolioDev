@@ -148,7 +148,7 @@
 
             </div>
 
-            
+
         </div>
     </section>
 
@@ -156,16 +156,16 @@
         <div class="contenedor">
             <h4>Contacto</h4>
             <div class="contenedor-contacto">
-                <div class="circulo">
+                <div onclick="abrirPage('https://github.com/JuanGarDev?tab=repositories')" class="circulo">
                     <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="circulo">
+                <div onclick="abrirPage('mailto:fnxbeats@outlook.com')" class="circulo">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                <div class="circulo">
+                <div onclick="abrirPage('https://www.linkedin.com/in/juan-garc%C3%ADa-garcia-757509208/')" class="circulo">
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
-                <div class="circulo">
+                <div onclick="abrirPage('https://api.whatsapp.com/send?phone=5215627890185')" class="circulo">
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
 
@@ -209,6 +209,12 @@
             }
         }
 
+    </script>
+
+    <script>
+        function abrirPage(url) {
+            window.open(url, '_blank');
+        }
     </script>
 </body>
 
