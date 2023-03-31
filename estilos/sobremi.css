@@ -40,86 +40,57 @@
 
 }
 
-.nivel div{
+.barra-tecno{
     width: 0;
     height: 1.5em;
     border-radius: 1em;
-    background-color: rgba(66, 212, 79, .6);
 }
 
-#javaNiv{
-    animation: java-barra 15s forwards;
+.barra-claro{
+    background-color: rgba(66, 212, 79, .8);
 }
 
-@keyframes java-barra {
+.barra-oscuro{
+    background-color: rgba(126, 74, 235, .8);
+}
+
+.animacion-barra{
+    animation: lvl-barra 8s forwards;
+}
+
+.javaNiv{
+    --nivel: 85%;
+}
+
+.springNiv{
+    --nivel: 65%;
+}
+
+.hibernateNiv{
+    --nivel: 65%;
+}
+
+.mysqlNiv{
+    --nivel: 75%;
+}
+
+.htmlNiv{
+    --nivel: 85%;
+}
+
+.cssNiv{
+    --nivel: 70%;
+}
+
+.jsNiv{
+    --nivel: 50%;
+}
+
+@keyframes lvl-barra {
     100% {
-        width: 85%;
+        width: var(--nivel);
     }
 }
-
-#springNiv{
-    animation: spring-barra 15s forwards;
-}
-
-@keyframes spring-barra {
-    100% {
-        width: 65%;
-    }
-}
-
-#hibernateNiv{
-    animation: hibernate-barra 15s forwards;
-}
-
-@keyframes hibernate-barra {
-    100% {
-        width: 65%;
-    }
-}
-
-#mysqlNiv{
-    animation: myqsl-barra 15s forwards;
-}
-
-@keyframes myqsl-barra {
-    100% {
-        width: 75%;
-    }
-}
-
-#htmlNiv{
-    animation: html-barra 15s forwards;
-}
-
-@keyframes html-barra {
-    100% {
-        width: 85%;
-    }
-}
-
-#cssNiv{
-    animation: css-barra 15s forwards;
-}
-
-@keyframes css-barra {
-    100% {
-        width: 70%;
-    }
-}
-
-#jsNiv{
-    animation: js-barra 15s forwards;
-}
-
-@keyframes js-barra {
-    100% {
-        width: 50%;
-    }
-}
-
-
-
-
 
 #herramientas{
     display: flex;
@@ -265,4 +236,7 @@
     100%{
         transform: translateY(-15%);
     }
+}
+#titulocambio{
+    margin-bottom: 20px;
 }

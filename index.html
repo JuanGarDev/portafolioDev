@@ -71,27 +71,27 @@
 
             <div class="contenedor-sobremi">
                 <h3>Habilidades</h3>
-                <div class="tecnologias">
+                <div class="tecnologias" id="tecno">
 
                     <div class="contendor-lenguaje">
 
                         <h4>Java</h4>
                         <div class="nivel">
-                            <div id="javaNiv"></div>
+                            <div class="barra-tecno javaNiv barra-claro" id="barras"></div>
                         </div>
                         <div class="frameworks">
                             <h4>Spring</h4>
                             <div class="nivel">
-                                <div id="springNiv"></div>
+                                <div class="barra-tecno springNiv barra-claro" id="barras"></div>
                             </div>
                             <h4>Hibernate</h4>
                             <div class="nivel">
-                                <div id="hibernateNiv"></div>
+                                <div class="barra-tecno hibernateNiv barra-claro" id="barras"></div>
                             </div>
                         </div>
                         <h4>MySQL</h4>
                         <div class="nivel">
-                            <div id="mysqlNiv"></div>
+                            <div class="barra-tecno mysqlNiv barra-claro" id="barras"></div>
                         </div>
 
                     </div>
@@ -99,15 +99,15 @@
                     <div class="contendor-lenguaje">
                         <h4>Html</h4>
                         <div class="nivel">
-                            <div id="htmlNiv"></div>
+                            <div class="barra-tecno htmlNiv barra-claro" id="barras"></div>
                         </div>
                         <h4>Css</h4>
                         <div class="nivel">
-                            <div id="cssNiv"></div>
+                            <div class="barra-tecno cssNiv barra-claro" id="barras"></div>
                         </div>
                         <h4>JavaScript</h4>
                         <div class="nivel">
-                            <div id="jsNiv"></div>
+                            <div class="barra-tecno jsNiv barra-claro" id="barras"></div>
                         </div>
                     </div>
 
@@ -123,7 +123,7 @@
             </div>
 
             <div class="contenedor-sobremi">
-                <h3>Proyectos</h3>
+                <h3 id="titulocambio">Proyectos</h3>
                 <div class="contenedor-proyectos">
 
                     <div class="tarjeta oculta">
@@ -134,7 +134,7 @@
 
                             <i id="i-info" class="fa-solid fa-caret-down i-abajo"></i>
 
-                            <div  id="texto-proyecto" class="texto-info txt-oculto">
+                            <div id="texto-proyecto" class="texto-info txt-oculto">
                                 <p>Proyecto de página web con
                                     enfoque mobile first, creada de acuerdo a los
                                     requisitos solicitados por el cliente.
@@ -155,14 +155,7 @@
                         </div>
                     </div>
 
-                    <div class="tarjeta oculta">
-                        <div id="proyecto2" class="img-proyecto">
-                        </div>
-                        <div class="contenido-proyecto">
-                            <h4>Titulo del proyecto</h4>
-                            <p>Descripcion del proyecto</p>
-                        </div>
-                    </div>
+                    
                 </div>
 
 
@@ -176,14 +169,16 @@
         <div class="contenedor">
             <h4>Contacto</h4>
             <div class="contenedor-contacto">
-                <div onclick="abrirPage('https://github.com/JuanGarDev?tab=repositories')" class="circulo">
+                <div onclick="abrirPage('https://github.com/JuanGarDev?tab=repositories')" 
+                class="circulo">
                     <i class="fa-brands fa-github"></i>
                 </div>
-                <div onclick="abrirPage('mailto:fnxbeats@outlook.com')" class="circulo">
+                <div onclick="abrirPage('mailto:fnxbeats@outlook.com')" 
+                class="circulo">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div onclick="abrirPage('https://www.linkedin.com/in/juan-garc%C3%ADa-garcia-757509208/')"
-                    class="circulo">
+                class="circulo">
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
                 <div onclick="abrirPage('https://api.whatsapp.com/send?phone=5215627890185')" class="circulo">
@@ -198,29 +193,38 @@
 
     <script>
         icono = document.getElementById("modo");
+        barras = document.getElementsByClassName('barra-tecno');
         icono.addEventListener('click', () => {
             if (icono.classList.contains('fa-moon')) {
                 document.body.classList.toggle('oscuro');
                 document.body.classList.remove('claro');
                 icono.classList.toggle('fa-sun');
                 icono.classList.remove('fa-moon');
+                for (i = 0; i < barras.length; i++) {
+                    barras[i].classList.remove('barra-claro');
+                    barras[i].classList.add('barra-oscuro');
+                }
             } else if (icono.classList.contains('fa-sun')) {
                 document.body.classList.toggle('claro');
                 document.body.classList.remove('oscuro');
                 icono.classList.toggle('fa-moon');
                 icono.classList.remove('fa-sun');
+                for (i = 0; i < barras.length; i++) {
+                    barras[i].classList.remove('barra-oscuro');
+                    barras[i].classList.add('barra-claro');
+                }
             }
         });
 
         iconoInfo = document.getElementById('i-info');
         txt = document.getElementById('texto-proyecto');
         iconoInfo.addEventListener('click', () => {
-            if(txt.classList.contains('txt-oculto')){
+            if (txt.classList.contains('txt-oculto')) {
                 txt.classList.remove('txt-oculto');
                 txt.classList.add('txt-activo');
                 iconoInfo.classList.remove('fa-caret-down', 'i-abajo');
                 iconoInfo.classList.add('fa-caret-up', 'i-arriba');
-            }else if(txt.classList.contains('txt-activo')){
+            } else if (txt.classList.contains('txt-activo')) {
                 txt.classList.remove('txt-activo');
                 txt.classList.add('txt-oculto');
                 iconoInfo.classList.remove('fa-caret-up', 'i-arriba');
@@ -230,7 +234,6 @@
 
 
         window.addEventListener('scroll', mostrar);
-
         function mostrar() {
             var reveladas = document.querySelectorAll('.oculta');
 
@@ -246,11 +249,39 @@
             }
         }
 
+
+        window.addEventListener('scroll', mostrarObjetos2);
+        function mostrarObjetos2() {
+            var elementos = document.getElementsByClassName('barra-tecno');
+            for (i = 0; i < elementos.length; i++) {
+                var windowheigh = window.innerHeight;
+                var revelarTop = elementos[i].getBoundingClientRect().top;
+                var revealpoint = 0;
+                if (revelarTop < windowheigh - revealpoint) {
+                    elementos[i].classList.add('animacion-barra');
+                }
+            }
+
+        }
+
     </script>
 
     <script>
         function abrirPage(url) {
             window.open(url, '_blank');
+        }
+
+        window.addEventListener('scroll', mostrarObjetos3);
+        function mostrarObjetos3() {
+            var elementos = document.getElementsByClassName('circulo');
+            for (i = 0; i < elementos.length; i++) {
+                var windowheigh = window.innerHeight;
+                var revelarTop = elementos[i].getBoundingClientRect().top;
+                var revealpoint = 40;
+                if (revelarTop < windowheigh - revealpoint) {
+                    elementos[i].classList.add('animacion-girar');
+                }
+            }
         }
     </script>
 </body>
