@@ -37,10 +37,10 @@
             </div>
 
             <div class="saludo">
-                    <h1>Hola</h1>
-                    <h1>Soy Juan</h1>
-                    <h1 class="txt">Desarrollador</h1>
-                    <h1 class="txt">FullStack</h1>
+                <h1>Hola</h1>
+                <h1>Soy Juan</h1>
+                <h1>Desarrollador</h1>
+                <h1>FullStack</h1>
             </div>
 
             <div class="contenedor-img">
@@ -82,7 +82,7 @@
                             <h4>Spring</h4>
                             <div class="nivel">
                                 <div id="springNiv"></div>
-                            </div> 
+                            </div>
                             <h4>Hibernate</h4>
                             <div class="nivel">
                                 <div id="hibernateNiv"></div>
@@ -124,6 +124,30 @@
                 </div>
             </div>
 
+            <div class="contenedor-sobremi">
+                <h3>Proyectos</h3>
+                <div class="contenedor-proyectos">
+
+                    <div class="tarjeta">
+                        <div id="proyecto1" class="img-proyecto">
+                        </div>
+                        <div class="contenido-proyecto">
+                            <h4>Titulo del proyecto</h4>
+                            <p>Descripcion del proyecto</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta">
+                        <div id="proyecto2" class="img-proyecto">
+                        </div>
+                        <div class="contenido-proyecto">
+                            <h4>Titulo del proyecto</h4>
+                            <p>Descripcion del proyecto</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
     </section>
@@ -131,18 +155,18 @@
 
     <script>
         icono = document.getElementById("modo");
-            icono.addEventListener('click', () => {
-                if(icono.classList.contains('fa-moon')){
-                    document.body.classList.toggle('oscuro');
-                    document.body.classList.remove('claro');
-                    icono.classList.toggle('fa-sun');
-                    icono.classList.remove('fa-moon');
-                }else if(icono.classList.contains('fa-sun')){
-                    document.body.classList.toggle('claro');
-                    document.body.classList.remove('oscuro');
-                    icono.classList.toggle('fa-moon');
-                    icono.classList.remove('fa-sun');
-                }
+        icono.addEventListener('click', () => {
+            if (icono.classList.contains('fa-moon')) {
+                document.body.classList.toggle('oscuro');
+                document.body.classList.remove('claro');
+                icono.classList.toggle('fa-sun');
+                icono.classList.remove('fa-moon');
+            } else if (icono.classList.contains('fa-sun')) {
+                document.body.classList.toggle('claro');
+                document.body.classList.remove('oscuro');
+                icono.classList.toggle('fa-moon');
+                icono.classList.remove('fa-sun');
+            }
         });
     </script>
 </body>
