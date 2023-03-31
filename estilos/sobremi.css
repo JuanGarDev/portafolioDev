@@ -187,11 +187,11 @@
 }
 
 #proyecto1{
-    background-image: url(/recursos/fondoTxt.jpg);
+    background-image: url(https://raw.githubusercontent.com/JuanGarDev/portafolioDev/master/recursos/fondoPresentacion.jpg);
 }
 
 #proyecto2{
-    background-image: url(/recursos/fondoPresentacion.jpg);
+    background-image: url(https://raw.githubusercontent.com/JuanGarDev/portafolioDev/master/recursos/fondoTxt.jpg);
 }
 
 .contenido-proyecto{
