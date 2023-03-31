@@ -13,18 +13,9 @@
     margin: 20px 0;
 }
 
-
-#sobremi i{
-    font-size: 5.5em;
-    margin: 20px 20px;
-    transition: transform .3s linear;
-    
-}
-
-#sobremi i:hover{
+.otros i:hover{
     transform: translateX(0) scale(1.15);
 }
-
 
 
 #sobremi .contendor-lenguaje{
@@ -147,6 +138,13 @@
 
 .otros{
     display: flex;
+    
+}
+
+.otros i{
+    font-size: 5.5em;
+    margin: 20px 20px;
+    transition: transform .3s linear;
 }
 
 
@@ -180,20 +178,91 @@
 }
 
 .img-proyecto{
-    width: 28em;
-    height: 15em;
-    background-position: center;
+    height: 20em;
+    background-position: center center;
     background-size: cover;
 }
 
 #proyecto1{
-    background-image: url(https://raw.githubusercontent.com/JuanGarDev/portafolioDev/master/recursos/fondoPresentacion.jpg);
+    background-image: url(/recursos/img-ruleta.png);
 }
 
 #proyecto2{
     background-image: url(https://raw.githubusercontent.com/JuanGarDev/portafolioDev/master/recursos/fondoTxt.jpg);
 }
 
+#info{
+    font-size: 3em;
+    margin: 0 auto;
+}
+
 .contenido-proyecto{
+    margin: 20px 25px;
+}
+
+.tecnologias-proyecto{
+    text-align: center;
     margin-top: 20px;
+}
+
+.tecnologias-proyecto i{
+    
+    font-size: 3em;
+    margin: 0 10px;
+}
+
+.texto-info{
+    max-width: 230px;
+    text-align: left;
+}
+
+.txt-oculto{
+    display: none;
+}
+
+.txt-activo{
+    display: flex;
+}
+
+
+.division div{
+    width: 20em;
+    height: 1px;
+    border-top: 2px solid white;
+    margin: 20px auto 10px auto;
+}
+
+#i-info{
+    font-size: 4em;
+    margin: 20px 0 0 0;
+}
+
+#i-info:hover{
+    cursor: pointer;
+}
+
+.i-abajo{
+    animation: bajar 2s infinite;
+}
+
+.i-arriba{
+    animation: subir 2s infinite;
+}
+
+@keyframes bajar{
+    0%{
+        transform: translateY(-25%);
+    }
+    100%{
+        transform: translateY(15%);
+    }
+}
+
+@keyframes subir{
+    0%{
+        transform: translateY(25%);
+    }
+    100%{
+        transform: translateY(-15%);
+    }
 }

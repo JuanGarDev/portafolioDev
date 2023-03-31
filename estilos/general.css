@@ -7,7 +7,7 @@ body{
     scroll-behavior: smooth;
     background-image: 
     linear-gradient(19deg, 
-    #7E4AEB 0%, #46C0E0 40%, #4C70D4 90%);
+    #7E4AEB 0%, #46cae0 45%, #4C70D4 85%);
     color: #fcfcfc;
     text-align: center;
     align-items: center;
@@ -16,7 +16,7 @@ body{
 
     background-size: 180% 180%;
     
-    animation: movimiento 5s linear infinite alternate-reverse;
+    animation: movimiento 7s linear infinite alternate-reverse;
 }   
 
 
@@ -73,13 +73,13 @@ img{
 
 .oscuro{
     background-image: 
-    linear-gradient(94deg, #251845 0%, #0c1222 100%);
+    linear-gradient(94deg, #20153b 0%, #090d18 100%);
 }
 
 .claro{
     background-image: 
     linear-gradient(19deg, 
     #7E4AEB 0%, 
-    #46C0E0 40%, 
-    #4C70D4 90%);
+    #46cae0 45%, 
+    #4C70D4 85%);
 }

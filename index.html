@@ -130,8 +130,28 @@
                         <div id="proyecto1" class="img-proyecto">
                         </div>
                         <div class="contenido-proyecto">
-                            <h4>Titulo del proyecto</h4>
-                            <p>Descripcion del proyecto</p>
+                            <h4>Pagina web responsive</h4>
+
+                            <i id="i-info" class="fa-solid fa-caret-down i-abajo"></i>
+
+                            <div  id="texto-proyecto" class="texto-info txt-oculto">
+                                <p>Proyecto de página web con
+                                    enfoque mobile first, creada de acuerdo a los
+                                    requisitos solicitados por el cliente.
+                                    <br />Diseñé y desarrollé la arquitectura de la página,
+                                    y trabajé en la selección de recursos visuales
+                                    y de contenido para su implementación
+                                </p>
+                            </div>
+                            <div class="division">
+                                <div></div>
+                            </div>
+                            <div class="tecnologias-proyecto">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-git-alt"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
                         </div>
                     </div>
 
@@ -162,7 +182,8 @@
                 <div onclick="abrirPage('mailto:fnxbeats@outlook.com')" class="circulo">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                <div onclick="abrirPage('https://www.linkedin.com/in/juan-garc%C3%ADa-garcia-757509208/')" class="circulo">
+                <div onclick="abrirPage('https://www.linkedin.com/in/juan-garc%C3%ADa-garcia-757509208/')"
+                    class="circulo">
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
                 <div onclick="abrirPage('https://api.whatsapp.com/send?phone=5215627890185')" class="circulo">
@@ -188,6 +209,22 @@
                 document.body.classList.remove('oscuro');
                 icono.classList.toggle('fa-moon');
                 icono.classList.remove('fa-sun');
+            }
+        });
+
+        iconoInfo = document.getElementById('i-info');
+        txt = document.getElementById('texto-proyecto');
+        iconoInfo.addEventListener('click', () => {
+            if(txt.classList.contains('txt-oculto')){
+                txt.classList.remove('txt-oculto');
+                txt.classList.add('txt-activo');
+                iconoInfo.classList.remove('fa-caret-down', 'i-abajo');
+                iconoInfo.classList.add('fa-caret-up', 'i-arriba');
+            }else if(txt.classList.contains('txt-activo')){
+                txt.classList.remove('txt-activo');
+                txt.classList.add('txt-oculto');
+                iconoInfo.classList.remove('fa-caret-up', 'i-arriba');
+                iconoInfo.classList.add('fa-caret-down', 'i-abajo');
             }
         });
 
