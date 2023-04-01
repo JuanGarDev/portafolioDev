@@ -1,0 +1,119 @@
+@media(min-width: 1000px) {
+
+    .contenedor {
+        display: flex;
+        font-size: 12px;
+
+    }
+
+    header .contenedor{
+        flex-direction: row;
+        padding: 2vh 10px;
+        margin: 20px;
+    }
+
+    #presentacion .contenedor{
+        flex-direction: row;
+        --characters-steps: 18;
+        --characters: 8.5ch;
+        margin: 60px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .contenedor-img{
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .imagen{
+        width: 70vh;
+        height: 70vh;
+        background-image: url(https://raw.githubusercontent.com/JuanGarDev/portafolioDev/master/recursos/img-header.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .saludo{
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    #presentacion h1{
+        letter-spacing: 1px;
+        font-weight: 10;
+        font-family: 'Anton', sans-serif;
+        padding: 16px 10px;
+        line-height: 50px;
+        text-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+    }
+
+    #sobremi .contenedor{
+        flex-direction: column;
+        margin: 40px 120px;
+    }
+    
+    #sobremi .contenedor-sobremi{
+        margin: 40px;
+    }
+
+    .txt-sobremi{
+        margin: 20px 40px;
+    }
+
+    .tecnologias{
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    #sobremi .contendor-lenguaje{
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .otros i{
+        font-size: 5.5em;
+        margin: 40px ;
+        transition: transform .3s linear;
+    }
+
+    .contenedor-proyectos{
+        display: flex;
+        flex-direction: row;
+        margin: 40px;
+    }
+
+    .tarjeta{
+        margin: 20px 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 1.5em;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .2);
+        overflow: hidden;
+        transition: opacity 1.5s linear, transform .3s linear;
+    }
+
+    .tarjeta h4{
+        font-size: 2em;
+    }
+    .tarjeta p{
+        font-size: 1.8em;
+    }
+
+    .img-proyecto{
+        display: flex;
+        width: 40em;
+        height: 20em;
+    }
+
+    .texto-info{
+        max-width: 430px;
+    }
+
+    .texto-info i{
+        font-size: 2em;
+        margin: 0 10px;
+    }
+
+}
+
+

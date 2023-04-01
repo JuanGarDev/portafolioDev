@@ -10,7 +10,8 @@
 
 
 #sobremi p{
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .otros i:hover{
@@ -37,7 +38,6 @@
     border-radius: 2em;
     border: 1.5px solid white;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .1);
-
 }
 
 .barra-tecno{
@@ -203,12 +203,12 @@
     margin: 20px auto 10px auto;
 }
 
-#i-info{
+.i-info{
     font-size: 4em;
     margin: 20px 0 0 0;
 }
 
-#i-info:hover{
+.i-info:hover{
     cursor: pointer;
 }
 
@@ -224,8 +224,11 @@
     0%{
         transform: translateY(-25%);
     }
-    100%{
+    80%{
         transform: translateY(15%);
+    }
+    100%{
+        transform: translateY(-25%);
     }
 }
 
@@ -233,8 +236,11 @@
     0%{
         transform: translateY(25%);
     }
-    100%{
+    80%{
         transform: translateY(-15%);
+    }
+    100%{
+        transform: translateY(25%);
     }
 }
 #titulocambio{

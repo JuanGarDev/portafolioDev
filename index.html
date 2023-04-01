@@ -15,28 +15,23 @@
     <link rel="stylesheet" href="estilos/presentacion.css">
     <link rel="stylesheet" href="estilos/sobremi.css">
     <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/desktop.css/generalDesk.css">
     <title>Juan García - Programador</title>
 </head>
 
 <body>
     <header>
         <div class="contenedor">
-            <div class="indices">
-                <a href="#">Sobre mi</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Contacto</a>
-            </div>
-            <i class="fa-solid fa-moon tamanio" id="modo"></i>
+                <i class="fa-solid fa-moon tamanio" id="modo"></i>
         </div>
     </header>
 
     <section id="presentacion">
         <div class="contenedor">
 
-            <div class="foto">
-                <img src="" alt="">
+            <div class="contenedor-img">
+                <div class="imagen"></div>
             </div>
-
             <div class="saludo">
                 <h1>Hola</h1>
                 <h1>Soy Juan</h1>
@@ -44,9 +39,6 @@
                 <h1 id="full">FullStack</h1>
             </div>
 
-            <div class="contenedor-img">
-                <img src="recursos/img-header.png">
-            </div>
 
         </div>
     </section>
@@ -56,7 +48,7 @@
 
             <div class="contenedor-sobremi">
                 <h3>Sobre mi</h3>
-                <p>
+                <p class="txt-sobremi">
                     Desde joven, siempre he sido un apasionado de la
                     tecnología y la informática. Al ingresar al
                     Cecyt 14, tomé la carrera de técnico en informática,
@@ -132,20 +124,19 @@
                         <div class="contenido-proyecto">
                             <h4>Pagina web responsive</h4>
 
-                            <i id="i-info" class="fa-solid fa-caret-down i-abajo"></i>
+                            <i id="i-info1" class="fa-solid fa-caret-down i-abajo i-info"></i>
 
-                            <div id="texto-proyecto" class="texto-info txt-oculto">
+                            <div id="texto-proyecto1" class="texto-info txt-oculto">
                                 <p>Proyecto de página web con
                                     enfoque mobile first, creada de acuerdo a los
                                     requisitos solicitados por el cliente.
-                                    <br />Diseñé y desarrollé la arquitectura de la página,
+                                    <br/>Diseñé y desarrollé la arquitectura de la página,
                                     y trabajé en la selección de recursos visuales
                                     y de contenido para su implementación
                                 </p>
                             </div>
-                            <div class="division">
-                                <div></div>
-                            </div>
+
+                            <p>Tecnologias:</p>
                             <div class="tecnologias-proyecto">
                                 <i class="fa-brands fa-html5"></i>
                                 <i class="fa-brands fa-css3-alt"></i>
@@ -155,6 +146,33 @@
                         </div>
                     </div>
 
+                    <div class="tarjeta oculta">
+                        <div id="proyecto1" class="img-proyecto">
+                        </div>
+                        <div class="contenido-proyecto">
+                            <h4>Pagina web responsive</h4>
+
+                            <i id="i-info-2" class="fa-solid fa-caret-down i-abajo i-info"></i>
+
+                            <div id="texto-proyecto2" class="texto-info txt-oculto">
+                                <p>Proyecto de página web con
+                                    enfoque mobile first, creada de acuerdo a los
+                                    requisitos solicitados por el cliente.
+                                    <br/>Diseñé y desarrollé la arquitectura de la página,
+                                    y trabajé en la selección de recursos visuales
+                                    y de contenido para su implementación
+                                </p>
+                            </div>
+
+                            <p>Tecnologias:</p>
+                            <div class="tecnologias-proyecto">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-git-alt"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
 
@@ -189,8 +207,6 @@
         </div>
     </footer>
 
-
-
     <script>
         icono = document.getElementById("modo");
         barras = document.getElementsByClassName('barra-tecno');
@@ -216,8 +232,8 @@
             }
         });
 
-        iconoInfo = document.getElementById('i-info');
-        txt = document.getElementById('texto-proyecto');
+        iconoInfo = document.getElementById('i-info1');
+        txt = document.getElementById('texto-proyecto1');
         iconoInfo.addEventListener('click', () => {
             if (txt.classList.contains('txt-oculto')) {
                 txt.classList.remove('txt-oculto');

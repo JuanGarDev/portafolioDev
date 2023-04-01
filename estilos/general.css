@@ -12,10 +12,7 @@ body{
     text-align: center;
     align-items: center;
     font-family: 'Barlow Condensed', sans-serif;
-
-
     background-size: 180% 180%;
-    
     animation: movimiento 7s linear infinite alternate-reverse;
 }   
 

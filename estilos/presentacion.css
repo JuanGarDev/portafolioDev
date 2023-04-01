@@ -13,8 +13,6 @@
 
 .contenedor-img{
     display: none;
-    width: 70vw;
-    height: 30vh;
 }
 
 .saludo{
@@ -33,13 +31,10 @@
 }
 
 #full {
-
     border-right: 10px solid;
-    
     width: 0;
     white-space: nowrap;
     overflow: hidden;
-
     animation: 
     tipeo 2s steps(var(--characters-steps)) .5s forwards, 
     pulso .5s infinite step-end alternate;
